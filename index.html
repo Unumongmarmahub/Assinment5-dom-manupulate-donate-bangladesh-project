@@ -54,17 +54,19 @@
     <!-- header section end  -->
 
     <!-- main section start  -->
-    <main class="my-32">
+    <main class="mb-28">
       <!-- donation and history buttons  -->
       <div class="flex justify-center pt-12 gap-5">
-        <button class="btn btn-outline text-2xl font-semibold bg-[#B4F461]">
+        <button id="btn-donate" class="btn btn-outline text-2xl font-semibold">
           Donation
         </button>
-        <button class="btn btn-outline text-2xl font-semibold">History</button>
+        <button id="btn-history" class="btn btn-outline text-2xl font-semibold">
+          History
+        </button>
       </div>
 
       <!-- donation sections start -->
-      <div>
+      <div id="part-of-donation">
         <!-- section 1 -->
         <div class="flex justify-center items-center pt-5 mt-6">
           <div class="w-4/5 bg-white rounded-lg shadow-lg">
@@ -111,7 +113,7 @@
             </div>
           </div>
         </div>
-        
+
         <!-- modal 1 start -->
         <div class="flex justify-center items-center hidden">
           <!-- Open the modal using ID.showModal() method -->
@@ -133,7 +135,6 @@
             </div>
           </dialog>
         </div>
-
         <!-- modal 1 end -->
 
         <!-- section 2 -->
@@ -235,13 +236,17 @@
       </div>
     </main>
 
+    <!-- for history section  -->
     <footer>
-      <!-- for history section  -->
-
-      <div class="bg-slate-50 mb-8 px-20 py-7 hidden"></div>
+      <div
+        id="part-of-history"
+        class="w-4/5 mx-auto  mb-2 px-20 py-3 hidden"
+      ></div>
     </footer>
 
     <!-- scripts files link  -->
     <script src="./js/donate.js"></script>
+    <script src="./js/history.js"></script>
+    <script src="./js/change.js"></script>
   </body>
 </html>

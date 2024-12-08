@@ -6,15 +6,20 @@ document
       document.getElementById("input-field-noakhali").value
     );
 
-    // input validation 
-    
-    if (isNaN(inputNoakhali) || inputNoakhali < 0) {
-      alert("Invalid Donation Amount");
-    }
-
     const balanceNoakhali = parseFloat(
       document.getElementById("initial-balance-noakhali").innerText
     );
+
+    // input validation
+
+    if (isNaN(inputNoakhali) || inputNoakhali <= 0) {
+      alert("Invalid Donation Amount...!");
+      document.getElementById("input-field-noakhali").value = "";
+      return;
+    } else {
+      alert("Successful...! Thanks for your donation.");
+    }
+
     const totalBalanceNoakhali = balanceNoakhali + inputNoakhali;
 
     document.getElementById("initial-balance-noakhali").innerText =
@@ -39,6 +44,16 @@ document
     const balanceFeni = parseFloat(
       document.getElementById("initial-balance-feni").innerText
     );
+
+    // input validation
+
+    if (isNaN(inputFeni) || inputFeni <= 0) {
+      alert("Invalid Donation Amount...!");
+      document.getElementById("input-field-feni").value = "";
+      return;
+    } else {
+      alert("Successful...! Thanks for your donation.");
+    }
 
     const totalBalanceFeni = balanceFeni + inputFeni;
 
@@ -67,6 +82,16 @@ document
       document.getElementById("initial-balance-quota").innerText
     );
 
+    // input validation
+
+    if (isNaN(inputQuota) || inputQuota <= 0) {
+      alert("Invalid Donation Amount...!");
+      document.getElementById("input-field-quota").value = "";
+      return;
+    } else {
+      alert("Successful...! Thanks for your donation.");
+    }
+
     const totalBalanceQuota = balanceQuota + inputQuota;
 
     document.getElementById("initial-balance-quota").innerText =
@@ -82,3 +107,10 @@ document
 
     document.getElementById("myBalance").innerText = myRemainingBalance;
   });
+
+// button donation
+document.getElementById("btn-donate").addEventListener("click", function () {
+  document.getElementById("part-of-donation").classList.remove("hidden");
+  document.getElementById("part-of-history").classList.add("hidden");
+  
+});
