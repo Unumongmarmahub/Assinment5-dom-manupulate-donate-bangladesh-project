@@ -111,6 +111,30 @@
             </div>
           </div>
         </div>
+        
+        <!-- modal 1 start -->
+        <div class="flex justify-center items-center hidden">
+          <!-- Open the modal using ID.showModal() method -->
+          <button class="btn" onclick="my_modal_1.showModal()">
+            open modal
+          </button>
+          <dialog id="my_modal_1" class="modal">
+            <div class="modal-box">
+              <h3 class="text-lg font-bold">Hello!</h3>
+              <p class="py-4">
+                Press ESC key or click the button below to close
+              </p>
+              <div class="modal-action">
+                <form method="dialog">
+                  <!-- if there is a button in form, it will close the modal -->
+                  <button class="btn">Close</button>
+                </form>
+              </div>
+            </div>
+          </dialog>
+        </div>
+
+        <!-- modal 1 end -->
 
         <!-- section 2 -->
 
@@ -121,7 +145,7 @@
             >
               <div class="w-full lg:w-1/2">
                 <img
-                  src="./pictures/noakhali.png"
+                  src="./pictures/feni.png"
                   alt="Card Image"
                   class="w-full h-auto rounded-lg"
                 />
@@ -130,7 +154,7 @@
               <div class="w-full lg:w-1/2 p-4">
                 <button class="btn text-[17px] font-semibold">
                   <img src="./pictures/coin.png" alt="" /><span
-                    id="initial-balance-noakhali"
+                    id="initial-balance-feni"
                     >600 BTD</span
                   >
                 </button>
@@ -143,14 +167,14 @@
                   causing significant damage to agriculture
                 </p>
                 <input
-                  id="input-field-noakhali"
+                  id="input-field-feni"
                   class="border border-y-2 outline-none w-full p-2 rounded-md mt-4"
                   placeholder="Write Your Amount"
                   type="text"
                   name=""
                 />
                 <button
-                  id="donate-btn-noakhali"
+                  id="donate-btn-feni"
                   class="w-full btn bg-[#B4F461] mt-5 text-[20px] font-semibold"
                 >
                   Donate Now
@@ -169,7 +193,7 @@
             >
               <div class="w-full lg:w-1/2">
                 <img
-                  src="./pictures/noakhali.png"
+                  src="./pictures/quota-protest.png"
                   alt="Card Image"
                   class="w-full h-auto rounded-lg"
                 />
@@ -178,7 +202,7 @@
               <div class="w-full lg:w-1/2 p-4">
                 <button class="btn text-[17px] font-semibold">
                   <img src="./pictures/coin.png" alt="" /><span
-                    id="initial-balance-noakhali"
+                    id="initial-balance-quota"
                     >2400 BTD</span
                   >
                 </button>
@@ -192,14 +216,14 @@
                   debates nationwide
                 </p>
                 <input
-                  id="input-field-noakhali"
+                  id="input-field-quota"
                   class="border border-y-2 outline-none w-full p-2 rounded-md mt-4"
                   placeholder="Write Your Amount"
                   type="text"
                   name=""
                 />
                 <button
-                  id="donate-btn-noakhali"
+                  id="donate-btn-quota"
                   class="w-full btn bg-[#B4F461] mt-5 text-[20px] font-semibold"
                 >
                   Donate Now
